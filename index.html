@@ -1,0 +1,420 @@
+<HTML>
+<HEAD>
+<Style type='text/css'>
+html{
+  overflow-x: hidden;
+}
+body {
+     background: #000;
+     width: 100%;
+     height: 100%;
+     overflow-x: hidden;
+}
+ .tempimg{
+  transform: scale(0.3);
+  position: absolute;
+  left: -30%;
+  top: 50%;
+ }
+ .tempimg2{
+  transform: scale(0.7);
+  position: absolute;
+  left: 1%;
+  top: 138%;
+ }
+ .tempimg3{
+  transform: scale(0.3);
+  position: absolute;
+  left: -30%;
+  top: 150%;
+ }
+ .tempimg4{
+  transform: scale(0.7);
+  position: absolute;
+  left: 1%;
+  top: 238%;
+ }
+ .tempimg5{
+  transform: scale(0.7);
+  position: absolute;
+  left: 46%;
+  top: 88%;
+ }
+ .tempimg6{
+  transform: scale(0.3);
+  position: absolute;
+  left: 15%;
+  top: 100%;
+ }
+ .tempimg7{
+  transform: scale(0.3);
+  position: absolute;
+  left: 15%;
+  top: 150%;
+ }
+ .tempimg8{
+  transform: scale(0.3);
+  position: absolute;
+  left: 15%;
+  top: 200%;
+ }
+#drawing_container {
+     position: absolute;
+     margin: auto;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     width: 150px;
+     height: 150px;
+     color: #fff;
+}
+.bgload{
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #131316;
+  text-align: center;
+  z-index: 9;
+}
+.bg80s {
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0;
+	position: fixed;
+	z-index: -5
+}
+#getstart{
+  top: 25%;
+ position: absolute;
+   bottom: 15px;
+   text-align: center;
+   width: 100%;
+}
+#neon2{
+
+  position:;
+  transform: scale(0.5);
+  -webkit-transform-origin-x: 0;
+}
+table.a {
+   text-decoration: none;
+left: 0;
+background-color: black;
+    position: fixed;
+    top: 3%;
+
+
+ 
+        z-index: 4;
+}
+tr.a {
+	background-color: black;
+	text-decoration: none;
+
+
+
+}
+th.a{
+	background-color: black;
+	text-decoration: none;
+	border-width:1.5px;  
+    border-style:solid;
+	font-family: neoneon;
+	 font-size: 25px;
+	  padding: 1px;
+
+
+}
+th.ab{
+	background-color: black;
+	font-family: neoneon;
+	 font-size: 15px;
+	  padding: 1px;
+	  border-collapse: collapse;
+	  text-decoration: none;
+  }
+    th.abc{
+    background-color: black;
+  text-decoration: none;
+  border-width:1.5px;  
+    border-style:solid;
+  font-family: neoneon;
+   font-size: 28px;
+    padding: 1px;
+
+
+
+}
+   th.abcd{
+    background-color: black;
+  text-decoration: none;
+  border-width:1.5px;  
+    border-style:solid;
+  font-family: neoneon;
+   font-size: 28px;
+    padding: 1px;
+
+
+
+
+}
+a.a{
+
+
+  color:   #FFA500;
+  text-shadow:
+    0 0 5px   #FFA500,
+    0 0 10px  #FFA500,
+    0 0 20px  #FFA500,
+    0 0 40px    #800E0B,
+    0 0 80px    #800E0B,
+    0 0 90px    #800E0B,
+    0 0 100px     #800E0B,
+    0 0 150px     #800E0B;
+
+
+}
+
+a.b{
+
+color:   #32c4e6;
+  text-shadow:
+    0 0 5px   #32c4e6,
+    0 0 10px  #32c4e6,
+    0 0 20px  #32c4e6,
+    0 0 40px    #082180,
+    0 0 80px    #082180,
+    0 0 90px    #082180,
+    0 0 100px     #082180,
+    0 0 150px     #082180;
+
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+.item {
+  position: relative;
+  border: 0px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 100px;
+  text-align: center;
+}
+.item img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  text-align: center;
+}
+{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: black;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+
+</Style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<SCRIPT>
+  $(function() {
+    $('.bgload').delay(1000).show().fadeOut('slow');
+});
+/* Change time! */
+</SCRIPT>
+</HEAD>
+<BODY>
+	<section >
+ 
+  <nav class="fill">
+  <TABLE width='100%' class=a >
+		<TR class=a>
+			<TH class=a align='center'>
+				<div class="item">
+   <A href="file:///Volumes/GoogleDrive/My%20Drive/MS%20Design%207/final%20project%20website/final%20project%20index.html"><img src="nebula.jpg" alt="pepsi" text-align: center width='120' height='100'></A>
+  
+  
+
+				
+			</TH>
+			<TH class=abc>
+
+				
+				<a class="a"  href="#" class="link1" style="cursor: pointer;"><span>about</span></a>
+
+		</TH>
+			<TH class=abcd>
+
+				<a  class="b"  href="#" class="link2" style="cursor: pointer;"><span>vanilla</span></a>
+
+			</TH>
+			<TH class=abc>
+				
+				<a class="a" href="#" class="link3" style="cursor: pointer;"><span>modded</span></a>	
+				
+			</TH>
+			<TH class=abcd>
+
+				<a class="b" href="#" class="link4" style="cursor: pointer;"><span>tools</span></a>
+				
+			</TH>
+			<TH class=abc>
+
+				<a class="a" href="#" class="link5" style="cursor: pointer;">planning</a>
+			
+			<TH class=abcd>
+
+				<a class="b" href="#" class="link6" style="cursor: pointer;">efficiency</a>
+			
+			</TH>
+			<TH class=abc>
+
+				<a class="a" href="#" class="link7" style="cursor: pointer;"><span>getting burnt out</span></a>
+			
+			</TH>
+			<TH class=abcd>
+
+				
+    <a class="b" href="#" class="link8" style="cursor: pointer;"><span>tips and tricks</span></a>
+
+		
+			</TH>
+			<TH class=abc>
+
+			<a class="a" href="#" class="link9" style="cursor: pointer;"><span>examples</span></a>
+	
+			</TH>
+		</TR>
+	</TABLE>
+  </nav>
+</section>
+
+<DIV class="bg80s"><IMG src="80grid.jpg" width='100%' height='120%'></DIV>
+<div id="getstart" class="container">
+  <div class="neon">getting</div>
+  <div class="flux">started</div>
+</div>
+
+<div class="bgload"><img width='55%'src="retroloading.gif"></div>
+
+<img class="tempimg" src="80stv.png">
+<img class="tempimg2" src="80stv2.png">
+<img class="tempimg3" src="80stv.png">
+<img class="tempimg4" src="80stv2.png">
+<img class="tempimg5" src="80stv2.png">
+<img class="tempimg6" src="80stv.png">
+<img class="tempimg7" src="80stv.png">
+<img class="tempimg8" src="80stv.png">
+
+</BODY>
+</HTML>
